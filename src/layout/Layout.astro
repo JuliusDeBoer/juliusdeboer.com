@@ -12,7 +12,12 @@ import "@fontsource/iosevka/latin-400";
     <meta name="generator" content={Astro.generator} />
     <title>Julius</title>
   </head>
-  <body class="min-h-screen w-full bg-stone-950 font-mono text-slate-200">
-    <slot />
+  <body
+    class="flex min-h-screen w-full justify-center bg-stone-900 font-mono text-slate-200"
+    style="background-image: url('/stars.svg'); background-repeat: repeat;"
+  >
+    <main class="w-[70vw] bg-stone-950">
+      <slot />
+    </main>
   </body>
 </html>
